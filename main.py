@@ -2,7 +2,7 @@ import optool
 
 c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]
 
-A = [
+S = [
     [-1, -1, 0, 0, 0, 0, 0, 0, 0, 1, 0],
     [1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -24,8 +24,8 @@ Enzyme = ['ERG10', 'ERG13', 'HMG1', 'ERG12', 'ERG8', 'ERG19', 'IDI1', 'IDI1', 'N
 
 Km=[0.33]
 
-S = 1
+A = 1
 
-test = optool.op(c, A, b, kc, E, Enzyme)
+test = optool.op(c, S, b, kc, E, Enzyme)
 
-optool.prd(Km, S, c, A, b, test)
+optool.prd(Km, A, c, S, b, test)
