@@ -14,18 +14,14 @@ S = [
     [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, -1]
 ]
 
-b = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-
 kc = [2.1, 4.6, 0.023, 2.36, 3.4, 5.9, 0.001, 0.001, 0.14, 100, 100]
 
 E = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
 Enzyme = ['ERG10', 'ERG13', 'HMG1', 'ERG12', 'ERG8', 'ERG19', 'IDI1', 'IDI1', 'NDPS1', 'N/A', 'LS']
 
-Km=[0.33]
+Km = [0.33]
 
-A = 1
+test = optool.op(c, S, kc, E, Enzyme)
 
-test = optool.op(c, S, b, kc, E, Enzyme)
-
-optool.prd(Km, A, c, S, b, test)
+optool.prd(Km, c, S, E, test)
